@@ -2,7 +2,7 @@
 html, body {
   margin: 0;
   padding: 0;
-  background: #f0f4f8;
+  background: #a7f0f5; /* SASCO light cyan */
   color: #555;
   font-family: "Clear Sans", "Helvetica Neue", Arial, sans-serif;
   font-size: 18px; }
@@ -21,7 +21,9 @@ h1.title {
   margin: 0;
   display: block;
   float: left;
-  color: #4CAF50; }
+  color: #f4ef7d; /* SASCO soft yellow - matches 2048 tile */
+  -webkit-text-stroke: 1px #000;
+  text-stroke: 1px #000; }
 
 @-webkit-keyframes move-up {
   0% {
@@ -54,7 +56,7 @@ h1.title {
 .score-container, .best-container {
   position: relative;
   display: inline-block;
-  background: #4CAF50;
+  background: #7ab9f1; /* SASCO sky blue */
   padding: 15px 25px;
   font-size: 25px;
   height: 25px;
@@ -150,7 +152,7 @@ hr {
   -ms-user-select: none;
   -ms-touch-action: none;
   touch-action: none;
-  background: #95a5a6;
+  background: #b0acf1; /* SASCO soft purple */
   border-radius: 10px;
   width: 500px;
   height: 500px;
@@ -330,70 +332,110 @@ hr {
     z-index: 10;
     font-size: 55px; }
   .tile.tile-2 .tile-inner {
-    background: #eee4da;
+    background: #f7f7f7; /* SASCO soft white */
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-4 .tile-inner {
-    background: #ede0c8;
+    background: #cef577; /* Light lime green */
     box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0), inset 0 0 0 1px rgba(255, 255, 255, 0); }
   .tile.tile-8 .tile-inner {
-    color: #f9f6f2;
-    background: #f2b179; }
+    color: #fff;
+    background: #a7f0f5; /* SASCO cyan */ }
   .tile.tile-16 .tile-inner {
-    color: #f9f6f2;
-    background: #f59563; }
+    color: #fff;
+    background: #f2a7d0; /* Light pink */ }
   .tile.tile-32 .tile-inner {
-    color: #f9f6f2;
-    background: #f67c5f; }
+    color: #fff;
+    background: #72a4de; /* Medium blue */ }
   .tile.tile-64 .tile-inner {
-    color: #f9f6f2;
-    background: #f65e3b; }
+    color: #fff;
+    background: #d793fa; /* Light purple */ }
   .tile.tile-128 .tile-inner {
-    color: #f9f6f2;
-    background: #edcf72;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.2381), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
+    color: #fff;
+    background: #bee9c3; /* Mint green */
+    box-shadow: 0 0 30px 10px rgba(190, 233, 195, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.14286);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-128 .tile-inner {
         font-size: 25px; } }
   .tile.tile-256 .tile-inner {
-    color: #f9f6f2;
-    background: #edcc61;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.31746), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
+    color: #fff;
+    background: #ee836b; /* Coral/salmon */
+    box-shadow: 0 0 30px 10px rgba(238, 131, 107, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.19048);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-256 .tile-inner {
         font-size: 25px; } }
   .tile.tile-512 .tile-inner {
-    color: #f9f6f2;
-    background: #edc850;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.39683), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
+    color: #fff;
+    background: #e56bbf; /* SASCO pink */
+    box-shadow: 0 0 30px 10px rgba(229, 107, 191, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.2381);
     font-size: 45px; }
     @media screen and (max-width: 520px) {
       .tile.tile-512 .tile-inner {
         font-size: 25px; } }
   .tile.tile-1024 .tile-inner {
-    color: #f9f6f2;
-    background: #edc53f;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.47619), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    color: #fff;
+    background: #7ab9f1; /* SASCO sky blue */
+    box-shadow: 0 0 30px 10px rgba(122, 185, 241, 0.47), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-1024 .tile-inner {
         font-size: 15px; } }
   .tile.tile-2048 .tile-inner {
-    color: #f9f6f2;
-    background: #edc22e;
-    box-shadow: 0 0 30px 10px rgba(243, 215, 116, 0.55556), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
+    color: #fff;
+    background: #f4ef7d; /* SASCO soft yellow (gold) */
+    box-shadow: 0 0 30px 10px rgba(244, 239, 125, 0.55), inset 0 0 0 1px rgba(255, 255, 255, 0.33333);
     font-size: 35px; }
     @media screen and (max-width: 520px) {
       .tile.tile-2048 .tile-inner {
         font-size: 15px; } }
-  .tile.tile-super .tile-inner {
-    color: #f9f6f2;
-    background: #3c3a32;
+  .tile.tile-4096 .tile-inner {
+    color: #fff;
+    background: #e56bbf; /* SASCO bright pink */
+    box-shadow: 0 0 30px 10px rgba(229, 107, 191, 0.47), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
     font-size: 30px; }
     @media screen and (max-width: 520px) {
-      .tile.tile-super .tile-inner {
+      .tile.tile-4096 .tile-inner {
         font-size: 10px; } }
+  .tile.tile-8192 .tile-inner {
+    color: #fff;
+    background: #72a4de; /* SASCO medium blue */
+    box-shadow: 0 0 30px 10px rgba(114, 164, 222, 0.47), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    font-size: 30px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-8192 .tile-inner {
+        font-size: 10px; } }
+  .tile.tile-16384 .tile-inner {
+    color: #fff;
+    background: #d793fa; /* SASCO light purple */
+    box-shadow: 0 0 30px 10px rgba(215, 147, 250, 0.47), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    font-size: 25px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-16384 .tile-inner {
+        font-size: 8px; } }
+  .tile.tile-32768 .tile-inner {
+    color: #fff;
+    background: #cef577; /* SASCO lime green */
+    box-shadow: 0 0 30px 10px rgba(206, 245, 119, 0.47), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    font-size: 25px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-32768 .tile-inner {
+        font-size: 8px; } }
+  .tile.tile-65536 .tile-inner {
+    color: #fff;
+    background: #f2a7d0; /* SASCO light pink */
+    box-shadow: 0 0 30px 10px rgba(242, 167, 208, 0.47), inset 0 0 0 1px rgba(255, 255, 255, 0.28571);
+    font-size: 25px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-65536 .tile-inner {
+        font-size: 8px; } }
+  .tile.tile-super .tile-inner {
+    color: #fff;
+    background: #3c3a32; /* Dark fallback for values beyond 65536 */
+    font-size: 20px; }
+    @media screen and (max-width: 520px) {
+      .tile.tile-super .tile-inner {
+        font-size: 8px; } }
 
 @-webkit-keyframes appear {
   0% {
@@ -520,7 +562,7 @@ hr {
 
 .restart-button {
   display: inline-block;
-  background: #8f7a66;
+  background: #b0acf1; /* SASCO soft purple */
   border-radius: 3px;
   padding: 0 20px;
   text-decoration: none;
